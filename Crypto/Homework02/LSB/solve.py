@@ -8,15 +8,12 @@ p.recvuntil("n = ")
 n = int(p.recvline().strip())
 p.recvuntil("c = ")
 c = int(p.recvline().strip())
-p.recvuntil("m = ")
-m = int(p.recvline().strip())
 
 e = 65537
 
 lower_b = 0
 upper_b = n
 
-thistime_r = n % 3
 chaox_r = (-n) % 3
 
 mod_c = (pow(3, e, n)*c)%n
@@ -47,7 +44,6 @@ while(1):
 
 print(f'========FINAL========')
 print(f'the guess plain is {upper_b}');
-print(f'the right plain is {m}')
 guess_plain = upper_b
 
 for i in range(-128, 128):
