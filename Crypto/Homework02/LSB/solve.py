@@ -38,12 +38,12 @@ while(1):
     mod_c = (pow(3, e, n)*mod_c)%n
 
     if(upper_b == lower_b):
-        break;
+        break
 
 
 
 print(f'========FINAL========')
-print(f'the guess plain is {upper_b}');
+print(f'the guess plain is {upper_b}')
 guess_plain = upper_b
 
 for i in range(-128, 128):
